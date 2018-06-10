@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean name="c" class="top.yibobo.pojo.ClassInfo">
+        <property name="classInfoId" value="1" />
+        <property name="name" value="java班"/>
+    </bean>
+    
+    <bean name="s" class="top.yibobo.pojo.Student">
+        <property name="stuId" value="1" />
+        <property name="name" value="小明" />
+        <property name="sex" value="男" />
+        <property name="classInfo" ref="c" />
+    </bean>
+</beans>
